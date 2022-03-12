@@ -1,2 +1,14 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+
+namespace MyApp
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            var buah = new KodeBuah(Buah.Kurma);
+            Console.WriteLine($"Nama Buah\t: {buah.buah}");
+            Console.WriteLine($"Kode Buah\t: {buah.getKodeBuah()}");
+        }
+    }
+}
